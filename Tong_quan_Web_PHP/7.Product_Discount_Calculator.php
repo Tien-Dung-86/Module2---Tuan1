@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .container{
+        .container {
             width: 250px;
             border: 1px solid black;
             position: absolute;
         }
-        input{
+
+        input {
             padding: 2px;
             margin: 5px;
             position: relative;

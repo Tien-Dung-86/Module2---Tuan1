@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Future Value Calculator</title>
     <style>
-        .container{
+        .container {
             width: 200px;
             padding: 10px;
             border: 1px solid black;
         }
-        input{
+
+        input {
             margin: 2px;
         }
     </style>
@@ -22,7 +23,7 @@
     <div class="container">
         <h3>Future Value Calculator</h3>
         <label>
-           Investment Amount:
+            Investment Amount:
             <input type="text" name="investmentAmount">
         </label>
 
@@ -42,16 +43,16 @@
 </html>
 
 <?php
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $investmentAmount = $_POST["investmentAmount"];
     $yearlyInterest = $_POST["yearlyInterest"];
     $numberOfYear = $_POST["numberOfYear"];
 };
 $futureValue = $investmentAmount + ($investmentAmount * $yearlyInterest);
-for($i = 1; $i <= $numberOfYear; $i++){
-    if($i == $numberOfYear){
+for ($i = 1; $i <= $numberOfYear; $i++) {
+    if ($i == $numberOfYear) {
         $futureValue = $futureValue * $i;
     }
 }
-echo "The Future value is: ".$futureValue;
+echo "The Future value is: " . $futureValue;
 ?>

@@ -44,37 +44,36 @@
 </html>
 
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $firstOperand = $_POST['firstOperand'];
     $operator = $_POST['operator'];
     $secondOperand = $_POST['secondOperand'];
 }
-switch($operator){
+switch ($operator) {
     case '+':
         $calculation = $firstOperand + $secondOperand;
-        echo "<h3>Result:</h3>"."<br/>";
-        echo $firstOperand.$operator.$secondOperand."=".$calculation;
+        echo "<h3>Result:</h3>" . "<br/>";
+        echo $firstOperand . $operator . $secondOperand . "=" . $calculation;
         break;
     case '-':
         $calculation = $firstOperand - $secondOperand;
-        echo "<h3>Result:</h3>"."<br/>";
-        echo $firstOperand.$operator.$secondOperand."=".$calculation;
+        echo "<h3>Result:</h3>" . "<br/>";
+        echo $firstOperand . $operator . $secondOperand . "=" . $calculation;
         break;
     case '*':
         $calculation = $firstOperand * $secondOperand;
-        echo "<h3>Result:</h3>"."<br/>";
-        echo $firstOperand.$operator.$secondOperand."=".$calculation;
+        echo "<h3>Result:</h3>" . "<br/>";
+        echo $firstOperand . $operator . $secondOperand . "=" . $calculation;
         break;
     case '/':
-        try{
-        $calculation = $firstOperand / $secondOperand;
-        echo "The second operand must > 0";
+        try {
+            $calculation = $firstOperand / $secondOperand;
+            echo "The second operand must > 0";
+        } catch (Exception $e) {
+            echo 'Message: ' . $e->getMessage();
         }
-        catch(Exception $e){
-            echo 'Message: '.$e->getMessage();
-        }
-        echo "<h3>Result:</h3>"."<br/>";
-        echo $firstOperand.$operator.$secondOperand."=".$calculation;
+        echo "<h3>Result:</h3>" . "<br/>";
+        echo $firstOperand . $operator . $secondOperand . "=" . $calculation;
         break;
 }
 ?>
