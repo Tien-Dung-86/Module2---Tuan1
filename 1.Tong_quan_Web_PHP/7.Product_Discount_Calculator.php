@@ -45,7 +45,7 @@
 </body>
 </html>
 <?php
-include "Tong_quan_Web_PHP/display_discount.php";
+include "1.Tong_quan_Web_PHP/display_discount.php";
 ?>
 
 

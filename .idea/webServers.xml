@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="40d0408b-1e13-4a48-ae7f-12a03f321143" name="hello world" url="http://localhost">
-        <fileTransfer mountedRoot="$PROJECT_DIR$/helloworld" accessType="MOUNT" port="0" />
+      <webServer id="3e7d0c2d-06db-40ec-8f7c-7a6a52ad96bd" name="123" url="http://localhost">
+        <fileTransfer mountedRoot="$PROJECT_DIR$/.." accessType="MOUNT" port="0" />
       </webServer>
     </option>
   </component>

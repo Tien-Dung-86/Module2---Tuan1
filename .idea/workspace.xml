@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23664746-cf5c-476e-8231-4e4fc11b540d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.Mang_va_ham_trong_PHP/1.Loc_danh_sach_khach_hang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/1.Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/1.Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/10.Convert_Money.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/10.Convert_Money.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/11.Prime.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/11.Prime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/12.Option_prime.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/12.Option_prime.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/2.Chuc_nang_dang_nhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/2.Chuc_nang_dang_nhap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/3.Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/3.Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/4.Tu_dien_Anh_Viet.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/4.Tu_dien_Anh_Viet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/5.Ung_dung_doc_so_thanh_chu.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/5.Ung_dung_doc_so_thanh_chu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/6.Future_value_calculator.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/6.Future_value_calculator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/7.Product_Discount_Calculator.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/7.Product_Discount_Calculator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/8.Calculator_Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/8.Calculator_Application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/9.Show_Shape.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/9.Show_Shape.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/Ex1.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/Ex1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/display_discount.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/display_discount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tong_quan_Web_PHP/project.php" beforeDir="false" afterPath="$PROJECT_DIR$/1.Tong_quan_Web_PHP/project.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1wR7yVJzaRTYcZPsWsEg8TUiAmA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23664746-cf5c-476e-8231-4e4fc11b540d" name="Changes" comment="" />
+      <created>1628409801408</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628409801408</updated>
+      <workItem from="1628409802576" duration="1107000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
