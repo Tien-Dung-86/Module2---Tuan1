@@ -19,18 +19,15 @@ function isPrime($number)
     return true;
 }
 
-$number = 2;
+$N = 2;
 $count = 0;
-while ($count < 50) {
-    if ($number < 100) {
-        if (isPrime($number)) {
-            echo $number . '<br>';
-            $count++;
-        }
-        $number++;
-    } else {
-        break;
+$aNumber = 20;
+while ($count < $aNumber) {
+    if (isPrime($N)) {
+        echo $N . '<br>';
+        $count++;
     }
+    $N++;
 }
 ?>
 </body>
