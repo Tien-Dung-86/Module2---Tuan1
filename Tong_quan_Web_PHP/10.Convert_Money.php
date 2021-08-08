@@ -61,6 +61,9 @@ if (($from == 'VN') && ($to == 'US')) {
 } else if (($from == 'US') && ($to == 'VN')) {
     $convert = $inputMoney * 23000;
     echo 'Convert money: ' . "$inputMoney " . $from . " to " . $to . " = " . $convert;
+} else{
+
+    echo 'Convert money: ' . "$inputMoney " . $from . " to " . $to . " = " . $inputMoney;
 }
 
 ?>
