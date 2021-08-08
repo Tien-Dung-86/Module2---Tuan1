@@ -11,10 +11,12 @@
             background-color: cyan;
             width: 505px;
         }
-        table{
+
+        table {
             border: 1px solid black;
         }
-        th, td{
+
+        th, td {
             border: 1px solid grey;
             padding: 0px;
             margin: 0px;
