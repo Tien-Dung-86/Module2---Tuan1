@@ -10,17 +10,17 @@
 <body>
 <?php
 $number1 = array(1, 2, 3, 4, 5);
-$number2 = array(6, 7, 8, 9, 10);
-$number = array();
-for ($i = 0; $i <= count($number1) - 1; $i++) {
-    $number = array_push($number1[$i]);
+$number2 = array(6, 8, 9, 10);
+$number = [];
+for ($i = 0; $i < count($number1); $i++) {
+    $number = array_push($number1[$i], ',');
 }
-echo "The Array after add array number1: ".$number."<br>";
+echo "The Array after add array number1: " . $number . "<br>";
 
-for ($j = 0; $j <= count($number2) - 1; $j++) {
-    $number = array_push($number2[$j]);
+for ($j = 0; $j < count($number2); $j++) {
+    $number = array_push($number2[$j], '');
 }
-echo "The Array after add array number2: ".$number;
+echo "The Array after add array number2: " . $number . "<br>";
 
 ?>
 </body>
