@@ -5,19 +5,9 @@ class StopWatch
     private $startTime;
     private $endTime;
 
-    public function __construct($startTime, $endTime)
+    public function setStartTime($time)
     {
-        $this->startTime = date('Y-m-d H:i:s');
-    }
-
-    public function start()
-    {
-        $this->startTime = date('Y-m-d H:i:s');
-    }
-
-    public function stop()
-    {
-        $this->endTime = date('y-m-d H:i:s');
+        $this->startTime = $time;
     }
 
     public function getStartTime()
@@ -25,37 +15,41 @@ class StopWatch
         return $this->startTime;
     }
 
+    public function setEndTime($time)
+    {
+        $this->endTime = $time;
+    }
+
     public function getEndTime()
     {
         return $this->endTime;
     }
 
+    public function __constructor()
+    {
+        $this->startTime = date('Y-m-d H:i:s');
+
+    }
+
+    public function start()
+    {
+        echo $this->startTime = date('Y-m-d H:i:s') . "</br>";
+        $this->startTime = microtime(true);
+    }
+
+    public function stop()
+    {
+        echo $this->endTime = date('Y-m-d H:i:s') . "</br>";
+    }
+
     public function getElapsedTime()
     {
-        return $this->getEndTime() * $this->getStartTime();
-    }
-
-    public function setStartTime($time)
-    {
-        $this->startTime = $time;
-    }
-
-    public function setEndTime($time)
-    {
-        $this->endTime = $time;
+        return $this->endTime = (microtime(true) - $this->startTime);
     }
 }
 
 $stop1 = new StopWatch();
 $stop1->start();
-
-for ($i = 0; $i < 100000; $i++) {
-}
+sleep(6);
 $stop1->stop();
 echo $stop1->getElapsedTime();
-
-
-//$start = microtime(true);
-//sleep(2);
-//$end = (microtime(true) - $start);
-//echo "Elapsed time: " . $end;
