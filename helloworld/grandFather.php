@@ -67,18 +67,20 @@
 //Ông có phương thức sing() 1 tham so the loai nha
 //Neu truyen tham so la nhacvang thi ong hat bai
 
-class GrandParent{
-    protected int $speed;
-    protected string $music;
-    public function __construct($speed, $music){
-        $this->speed = $speed;
-        $this->music = $music;
-    }
-    public function Run(){
+class GrandFather
+{
+    private $speed = 5;
+
+    public function run()
+    {
         return $this->speed;
     }
-    public function Sing(){
-      return $this->music;
+
+    public function sing($music)
+    {
+        if ($music == "Yellow music") {
+            echo " Grandfather sing a song ('xyz') <br>";
+        }
     }
 }
 
