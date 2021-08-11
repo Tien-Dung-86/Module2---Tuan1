@@ -38,4 +38,7 @@ class Circle
     public function calculatePerimeter(){
         return M_PI * 2 * $this->radius;
     }
+    public function toString(){
+        echo "Circle: radius = " . $this->getRadius() . ", color = " . $this->getColor() . "<br>";
+    }
 }
