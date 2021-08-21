@@ -1,7 +1,7 @@
 <?php
-//include "Shape.php";
+//include "Triangle.php";
 
-class Rectangle extends Shape
+class Rectangle extends Triangle
 {
     public int $width;
     public int $height;

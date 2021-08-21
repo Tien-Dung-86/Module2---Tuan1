@@ -1,7 +1,7 @@
 <?php
-//include "Shape.php";
+//include "Triangle.php";
 
-class Circle extends Shape
+class Circle extends Triangle
 {
     public int $radius;
 
