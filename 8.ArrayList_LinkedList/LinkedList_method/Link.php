@@ -2,7 +2,7 @@
 
 class Link
 {
-    public $data;
+    public string $data;
     public $next;
 
     function __construct($data)
