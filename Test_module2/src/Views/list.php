@@ -1,49 +1,81 @@
-<div class="container mt-5">
-    <div class="card" >
-        <div class="card-header">
-            Product list
-        </div>
-        <div class="card-body">
-            <a href="index.php?page=product-add" type="button" class="btn btn-primary mb-3">Add New Product</a>
+ <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>Danh sách mặt hàng</title>
+        <style>
+            #right {
+                float: right;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
 
+            #left {
+                float: left;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+
+            th {
+                background: limegreen;
+                color: white;
+            }
+
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+<body>
+<h2 style="text-align: center; margin-top: 20px">Danh sách mặt hàng</h2>
+<div id="left">
+    <form method="get" class="form-inline my-2 my-lg-0">
+        <span>Nhập tên hàng:</span>
+        <input class="form-control mr-sm-2" type="search" value="<?php echo $_REQUEST['search'] ?? '' ?>"
+               name="search" aria-label="Search">
+        <button class="btn btn-success" type="submit">Tìm kiếm</button>
+    </form>
+</div>
+<div id="right"><a href="index.php?page=product-add" type="button" class="btn btn-success">Thêm mặt hàng</a></div>
 <table class="table">
     <thead>
     <tr>
-        <th scope="col">ID</th>
-        <th scope="col">Code</th>
-        <th scope="col">Brand</th>
-        <th scope="col">Category</th>
-        <th scope="col">Image</th>
-        <th scope="col">Name</th>
-        <th scope="col">Ram</th>
-        <th scope="col">CPU</th>
-        <th scope="col">Card</th>
-        <th scope="col">Hard Disk</th>
-        <th scope="col">Screen</th>
-        <th scope="col">Description</th>
-        <th scope="col" colspan="2">Action</th>
+        <th scope="col">#</th>
+        <th scope="col">Tên hàng</th>
+        <th scope="col">Loại hàng</th>
+        <th scope="col"></th>
     </tr>
     </thead>
     <tbody>
-    <?php if (isset($products)){
-        foreach($products as $product):;
-            ?>
-    <tr>
-        <td> <?php echo $product['id'] ?></td>
-        <td> <?php echo $product['product_code'] ?></td>
-        <td> <?php echo $product['brand'] ?></td>
-        <td> <?php echo $product['category'] ?></td>
-        <td> <?php echo $product['image'] ?></td>
-        <td> <?php echo $product['name'] ?></td>
-        <td> <?php echo $product['ram'] ?></td>
-        <td> <?php echo $product['cpu'] ?></td>
-        <td> <?php echo $product['card'] ?></td>
-        <td> <?php echo $product['hard_disk'] ?></td>
-        <td> <?php echo $product['screen'] ?></td>
-        <td> <?php echo $product['description'] ?></td>
-        <td><a href="index.php?page=product-update&id=<?php echo $product['id']?>" type="button" class="btn btn-warning">Edit</a></td>
-        <td><a onclick="return confirm('Are you want to Delete?')" href="index.php?page=product-delete&id=<?php echo $product['id']?>" type="button" class="btn btn-danger">Delete</a></td>
-    </tr>
-    <?php endforeach; };?>
+    <?php if (isset($products)) {
+        foreach ($products as $key => $product): ?>
+            <tr>
+                <td><?php echo ++$key ?></td>
+                <td><?php echo $product['productName'] ?></td>
+                <td><?php echo $product['sector'] ?></td>
+                <td><a href="index.php?page=product-update&id=<?php echo $product['id'] ?>">Chỉnh sửa</a> |
+                    <a href="index.php?page=product-delete&id=<?php echo $product['id'] ?>">Xóa</a>
+                </td>
+            </tr>
+        <?php endforeach;
+    } ?>
     </tbody>
 </table>
+</body>
+</html>

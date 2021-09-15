@@ -1,32 +1,35 @@
 <div class="container mt-5">
     <div class="card">
+        <?php  if(isset($product)){?>
         <div class="card-header">
-            UPDATE product
+            Chỉnh sửa mặt hàng <?php echo $product['productName'] ?>
         </div>
         <div class="card-body">
             <form method="post">
                 <div class="form-group">
-                    <label for="product-name">Name</label>
-                    <input type="text" class="form-control" id="product-name" name = "name" value = <?php echo $product['name'] ?> placeholder="Enter name">
+                    <label for="product-productName">Tên hàng</label>
+                    <input type="text" class="form-control" id="product-productName" name = "productName" value = <?php echo $product['productName'] ?> >
                 </div>
 
                 <div class="form-group">
-                    <label for="product-brand">Author</label>
-                    <input type="text" class="form-control" id="product-brand" name="author" value = <?php echo $product['brand'] ?> placeholder="Enter brand">
+                    <label for="product-category">Loại hàng</label>
                 </div>
-
                 <div class="form-group">
-                    <label for="product-category">Category</label>
-                    <input type="text" class="form-control" id="product-category" name="category" value = <?php echo $product['category'] ?> placeholder="Enter category">
+                    <label for="product-price">Giá</label>
+                    <input type="text" class="form-control" id="product-price" name="price" value = <?php echo $product['price'] ?>>
                 </div>
-
+                <div class="form-group">
+                    <label for="product-quantity">Số lượng:</label>
+                    <input type="text" class="form-control" id="product-quantity" name="quantity" value = <?php echo $product['quantity'] ?>>
+                </div>
                 <div class="form-group">
                     <label for="product-description">Description</label>
-                    <textarea type="text" class="form-control" id="product-description" name="description" placeholder="Enter desc"><?php echo $product['description'] ?></textarea>
+                    <textarea type="text" class="form-control" id="product-description" name="description"><?php echo $product['description'] ?></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Update</button>
-                <a href="index.php?page=product-list" type="button" class="btn btn-secondary">Cancel</a>
+                <button type="submit" class="btn btn-primary">Chỉnh sửa</button>
+                <a href="index.php?page=product-list" type="button" class="btn btn-secondary">Thoát</a>
             </form>
         </div>
     </div>
+    <?php }; ?>
 </div>

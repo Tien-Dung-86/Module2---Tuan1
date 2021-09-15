@@ -10,21 +10,13 @@ $productController = new Controllers\ProductController();
 include "src/Views/layout/header.php";
 
 switch ($page) {
-    case "":
+    case "product-list":
         if (isset($_GET['search'])) {
             $productController->search($_GET['search']);
         } else {
             $productController->index();
         }
         break;
-//    case
-//    "product-list":
-//        if (isset($_GET['search'])) {
-//            $productController->search($_GET['search']);
-//        } else {
-//            $productController->index();
-//        }
-//        break;
     case "product-add":
         $productController->add();
         break;
@@ -36,6 +28,12 @@ switch ($page) {
         $id = $_GET['id'];
         $productController->update($id);
         break;
+    default:
+        if (isset($_GET['search'])) {
+            $productController->search($_GET['search']);
+        } else {
+            $productController->index();
+        }
 }
 
 include "src/Views/layout/footer.php";

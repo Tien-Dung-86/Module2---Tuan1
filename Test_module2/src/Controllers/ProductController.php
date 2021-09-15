@@ -19,9 +19,10 @@ class ProductController{
             include_once "src/Views/add.php";
         } else {
             $data = [
-                "name" =>$_POST["name"],
-                "brand" =>$_POST["brand"],
+                "productName" =>$_POST["productName"],
                 "category" =>$_POST["category"],
+                "price" =>$_POST["price"],
+                "quantity" =>$_POST["quantity"],
                 "description" =>$_POST["description"]
             ];
             $this->model->add($data);
@@ -38,13 +39,14 @@ class ProductController{
             include "src/Views/update.php";
         } else {
             $data = [
-                "name" =>$_POST["name"],
-                "brand" =>$_POST["brand"],
+                "productName" =>$_POST["productName"],
                 "category" =>$_POST["category"],
+                "price" =>$_POST["price"],
+                "quantity" =>$_POST["quantity"],
                 "description" =>$_POST["description"]
             ];
             $this->model->update($id, $data);
-            header("Location:index.php?page=product-list");
+            echo '<script type="text/javascript"> alert("Xóa thành công"); window.location.href = "index.php"  </script>';
         }
     }
 

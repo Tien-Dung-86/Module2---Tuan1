@@ -18,12 +18,13 @@ class Products{
     }
 
     public function add($data){
-        $sql = "INSERT INTO `$this->table`(`name`, `brand`, `category`, `description`) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO `$this->table`(`productName`, `category`, `price`, `quantity`, `description`) VALUES (?, ?, ?, ?, ?)";
         $stmt = $this->connect->prepare($sql);
-        $stmt->bindParam(1, $data['name']);
-        $stmt->bindParam(2, $data['brand']);
-        $stmt->bindParam(3, $data['category']);
-        $stmt->bindParam(4, $data['description']);
+        $stmt->bindParam(1, $data['productName']);
+        $stmt->bindParam(2, $data['category']);
+        $stmt->bindParam(3, $data['price']);
+        $stmt->bindParam(4, $data['quantity']);
+        $stmt->bindParam(5, $data['description']);
         $stmt->execute();
     }
 
@@ -33,17 +34,18 @@ class Products{
     }
 
     public function update($id, $data){
-        $sql = "UPDATE $this->table SET name=?, brand=?, category=?, description=? WHERE id = $id";
+        $sql = "UPDATE $this->table SET productName=?, category=?, price=?, quantity=?, description=? WHERE id = $id";
         $stmt = $this->connect->prepare($sql);
-        $stmt->bindParam(1, $data['name']);
-        $stmt->bindParam(2, $data['brand']);
-        $stmt->bindParam(3, $data['category']);
-        $stmt->bindParam(4, $data['description']);
+        $stmt->bindParam(1, $data['productName']);
+        $stmt->bindParam(2, $data['category']);
+        $stmt->bindParam(3, $data['price']);
+        $stmt->bindParam(4, $data['quantity']);
+        $stmt->bindParam(5, $data['description']);
         $stmt->execute();
     }
 
     public function search($keyword){
-        $sql = "SELECT * FROM $this->table WHERE `name` LIKE '%".$keyword."%'";
+        $sql = "SELECT * FROM $this->table WHERE `productName` LIKE '%".$keyword."%'";
         $stmt = $this->connect->query($sql);
         return $stmt->fetchAll();
     }
